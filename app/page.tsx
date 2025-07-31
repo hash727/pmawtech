@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import ScrollingImages from "@/components/scroll_images";
 import ScroulingCrousel from "@/components/ScrollingCrousel";
 import Image from "next/image";
@@ -7,6 +8,12 @@ import MainBanner from "@/components/banner";
 import ConnectPage from "@/components/connect/page";
 import ModeToggle from "@/components/toggleTheme";
 import FooterSection from "@/components/Footer";
+
+
+export const metadata: Metadata = {
+  title: "Home - Solar Projects",
+  description: "PMAW technologies, Bangalore is providing wider range of Solar technologies for both commercial solar plant and home solar systems.",
+};
 
 export default function Home() {
   return (

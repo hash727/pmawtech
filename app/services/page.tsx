@@ -1,12 +1,16 @@
 'use client'
 
+import { Metadata } from 'next';
 import {motion} from 'framer-motion'
 import { FaSolarPanel, FaBolt, FaTools, FaChartLine, FaBatteryFull, FaRecycle } from 'react-icons/fa';
 import ServiceCard from '@/components/ServiceCard';
 import ServiceModal from '@/components/ServiceModal';
 import { useState } from 'react';
 
-
+export const metadata: Metadata = {
+    title: "Services Offered - PMAW Solar Technologies, Bangalore, Karnataka",
+    description: " Various serves offered for Solar Powerplant projects in Karnataka."
+}
     const serviceBunch = [
         {
             title: 'Rooftop Solar Installations',
@@ -46,7 +50,7 @@ import { useState } from 'react';
         },
     ];
 
-const services = () => {
+const Services = () => {
     const [selected, setSelected] = useState<number | null>(null);
 
     return(
@@ -104,4 +108,4 @@ const services = () => {
     )
 }
 
-export default services;
+export default Services;
