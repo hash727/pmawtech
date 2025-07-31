@@ -1,4 +1,5 @@
 // app/connect/page.tsx
+import { Metadata } from 'next';
 import React from 'react';
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 import {
@@ -9,6 +10,11 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: "Services Offered - PMAW Solar Technologies, Bangalore, Karnataka",
+    description: " Various serves offered for Solar Powerplant projects in Karnataka."
+}
 
 const ContactDetails = [
     {name:"Prasanna", mobile: "987654321", href: "http://wa.me/987654321", faceBook: "https://facebook.com/pmawtechnologies", email:"pmawtechnologies@gmail.com"},
@@ -151,13 +157,13 @@ const ConnectPage = () => {
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
-        <a
+        {/* <a
           href="mailto:pmawtechnologies@gmail.com"
         //   className="flex flex-col items-center justify-center bg-gray-700 hover:bg-gray-800 rounded-xl p-4 transition"
         >
           <FaEnvelope size={16} />
-          {/* <span className="mt-2 text-sm">Email</span> */}
-        </a>
+          {/* <span className="mt-2 text-sm">Email</span> *
+        </a> */}
       </div>
     </main>
   );

@@ -7,10 +7,7 @@ import ServiceCard from '@/components/ServiceCard';
 import ServiceModal from '@/components/ServiceModal';
 import { useState } from 'react';
 
-export const metadata: Metadata = {
-    title: "Services Offered - PMAW Solar Technologies, Bangalore, Karnataka",
-    description: " Various serves offered for Solar Powerplant projects in Karnataka."
-}
+
     const serviceBunch = [
         {
             title: 'Rooftop Solar Installations',
@@ -50,7 +47,7 @@ export const metadata: Metadata = {
         },
     ];
 
-const Services = () => {
+function Services(){
     const [selected, setSelected] = useState<number | null>(null);
 
     return(
