@@ -7,7 +7,7 @@ function contactUs() {
       <main className="w-full mx-auto px-4 py-12 bg-gray-300 dark:bg-gray-950">
         <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-300 mb-4">Contact Us</h1>
         <p className="text-center text-gray-700 dark:text-gray-400 mb-10">
-          We'd love to hear from you. Reach out to us for any solar project inquiries, quotes, or feedback.
+          We&apos;d love to hear from you. Reach out to us for any solar project inquiries, quotes, or feedback.
         </p>
 
         <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white shadow-md rounded-lg p-6">

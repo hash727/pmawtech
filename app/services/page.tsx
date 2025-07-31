@@ -46,7 +46,7 @@ import { useState } from 'react';
         },
     ];
 
-function services(){
+const services = () => {
     const [selected, setSelected] = useState<number | null>(null);
 
     return(

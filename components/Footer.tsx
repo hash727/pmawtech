@@ -15,8 +15,12 @@ function FooterSection(){
             pmawtechnologies@gmail.com
           </p>
           <p>
-            +91-9999999999
+            suhailsalva@gmail.com
           </p>
+          <p>
+            pharishkumar123@gmail.com
+          </p>
+          
         </div>
         
       </footer>

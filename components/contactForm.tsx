@@ -2,6 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 type FormData = {
   name: string;
@@ -21,14 +22,26 @@ export default function ContactForm() {
   const [success, setSuccess] = useState(false);
 
   const onSubmit = async (data: FormData) => {
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      body: JSON.stringify(data),
-    });
 
-    if (response.ok) {
-      setSuccess(true);
-      reset();
+    const loadingToast = toast.loading('Sending message...');
+    try{
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const dat = await response.json()
+      toast.dismiss(loadingToast);
+      if (response.ok) {
+        setSuccess(true);
+        reset();
+      }else{
+        toast.error(dat.error || "Something went wrong")
+      }
+    } catch(err) {
+      toast.dismiss(loadingToast);
+      toast.error('Failed to send email. Try again later.');
     }
   };
 

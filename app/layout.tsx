@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/ui/navbar";
 import NavBarN from "@/components/NavBarN";
 import FooterSection from "@/components/Footer";
+import { Toaster } from 'react-hot-toast';
 
 
 const geistSans = Geist({
@@ -32,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <Toaster position="bottom-right" />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
