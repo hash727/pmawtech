@@ -3,10 +3,10 @@ import ContactForm from '@/components/contactForm';
 
 function contactUs() {
   return (
-    <div className='p-20 bg-gray-800'>
+    <div className='p-5 md:p-10 lg:p-20 bg-gray-800'>
       <main className="w-full mx-auto px-4 py-12 bg-gray-300 dark:bg-gray-950">
-        <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-300 mb-4">Contact Us</h1>
-        <p className="text-center text-gray-700 dark:text-gray-400 mb-10">
+        <h1 className="text-4xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-gray-300 mb-4">Contact Us</h1>
+        <p className=" text-2xl md:lg:text-xl text-center text-gray-700 dark:text-gray-400 mb-10">
           We&apos;d love to hear from you. Reach out to us for any solar project inquiries, quotes, or feedback.
         </p>
 

@@ -25,9 +25,9 @@ export default function Home() {
       
       <div className=" ">
         <Card>
-          <CardHeader><span className="text-5xl font-semibold text-shadow-2xs ">Solar Project - Ground Mount & Roof Top</span></CardHeader>
+          <CardHeader><span className="text-3xl md:text-4xl lg:text-5xl font-semibold text-shadow-2xs ">Solar Project - Ground Mount & Roof Top</span></CardHeader>
           <CardContent>
-            <p className="text-2xl">
+            <p className="text-xl lg:text-2xl">
               PMAW Technologies is a dynamic and innovative green energy company that is committed to build premium solar projects. 
               PMAW CAPEX Thnologies is a dynamic and innovative green energy company that is committed to build premium solar projects. 
               We work closely with clients to understand their specific energy needs and provide customized solutions that are tailored to their requirements.
@@ -36,12 +36,12 @@ export default function Home() {
               <img
                 src="/Home/solar_main.jpg"
                 className=" aspect-square
-                    w-50 md:w-100
+                    w-25 md:w-60 lg:w-100
                   "
               />
               <span className="py-4 ml-10">
-                <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-300">WE OFFER</h2>
-                <ul className="list-disc list-inside text-blue-950 dark:text-blue-300" >
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-300">WE OFFER</h2>
+                <ul className="list-disc list-inside text-blue-950 dark:text-blue-300 md:lg:text-xl" >
                   
                     <li>OPEX model projects</li>
                     <li>CAPEX model projects</li>
@@ -54,8 +54,8 @@ export default function Home() {
         </Card>
       </div>
       <div className="bg-gray-300 dark:bg-gray-900 w-full p-10 rounded-t-xl">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-300">OUR PRODUCT RANGES</h2>
-        <div className="row-start-2 flex gap-96 flex-wrap">
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-300">OUR PRODUCT RANGES</h2>
+        <div className="row-start-2 flex gap-5 flex-wrap">
           <div>
               <ul className="list-disc list-inside  text-blue-950 dark:text-blue-300" >
                   <li>WELDING PRODUCTS</li>

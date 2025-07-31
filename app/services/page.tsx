@@ -52,7 +52,7 @@ function Services(){
 
     return(
         
-        <div className='py-20 p-20 w-full bg-gray-800 rounded-lg sm:rounded-sm'>
+        <div className='py-20 p-5 md:p-10 lg:p-20 w-full bg-gray-800 rounded-lg sm:rounded-sm'>
             <main className=" mx-auto px-4 py-12 bg-gray-300 dark:bg-gray-950">
                 <motion.h1 
                     initial={{ opacity: 0, y: -20 }}

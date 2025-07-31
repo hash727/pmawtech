@@ -54,15 +54,16 @@ function ScrollingImages(){
           <CarouselContent>
             {images.map((src, i) => (
               <CarouselItem key={i}>
-                <div className={`bg-[url(${src})})] bg-center bg-no-repeat bg-cover`}>
-                  
+                {/* <div className={`bg-[url(${src})})] bg-center bg-no-repeat bg-cover`}> */}
+                  <div>
                 
                   <img
                     src={src}
                     alt={`image-dub-${1}`}
                     className="
-                      md:object-fill
-                      w-full h-[480px] object-cover
+                      
+                      w-full
+                      object-cover
                      
                     "                      
                   />
