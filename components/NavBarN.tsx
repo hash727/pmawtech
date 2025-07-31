@@ -13,7 +13,7 @@ const navigation = [
   { name: 'Contact Us', href: '/contactus', current: false },
 ]
 
-function classNames(...classes: string[]) {
+function classNames(...classes: (string | undefined | null | boolean)[]) {
   return classes.filter(Boolean).join(' ')
 }
 
