@@ -13,7 +13,7 @@ const navigation = [
   { name: 'Contact Us', href: '/contactus', current: false },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -24,7 +24,7 @@ export default function NavBarN() {
     // console.log(pathname)
     const ref = useRef(nav);
     
-    const setMap = (item) => {
+    const setMap = (item: { name: any; href?: string; current?: boolean }) => {
         const abc = ref.current;
         abc.map((i) => {
             // console.log(i)
