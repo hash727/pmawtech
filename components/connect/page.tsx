@@ -17,9 +17,9 @@ export const metadata: Metadata = {
 }
 
 const ContactDetails = [
-    {name:"Prasanna", mobile: "987654321", href: "http://wa.me/987654321", faceBook: "https://facebook.com/pmawtechnologies", email:"mailto:pmawtechnologies@gmail.com"},
-    {name:"Suhail", mobile: "876543210", href: "http://wa.me/876543210", faceBook: "https://facebook.com/suhailahamed", email:"mailto:suhailsalva@gmail.com"},
-    {name:"Harish", mobile: "765432109", href: "http://wa.me/765432109", faceBook: "https://facebook.com/pharishkumar123", email:"mailto:pharishkumar123@gmail.com"},
+    {name:"Prasanna", mobile: "9986914022", href: "http://wa.me/919986914022", faceBook: "https://facebook.com/pmawtechnologies", email:"mailto:pmawtechnologies@gmail.com"},
+    {name:"Suhail", mobile: "9902816261", href: "http://wa.me/919902816261", faceBook: "https://facebook.com/suhailahamed", email:"mailto:suhail.ighs@gmail.com"},
+    {name:"Harish", mobile: "9964462270", href: "http://wa.me/919964462270", faceBook: "https://facebook.com/pharishkumar123", email:"mailto:pharishkumar123@gmail.com"},
   ]
 
 const ConnectPage = () => {

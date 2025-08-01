@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/', current: false },
   { name: 'Services', href: '/services', current: false },
   { name: 'About Us', href: '/aboutus', current: false },
   { name: 'Contact Us', href: '/contactus', current: false },
@@ -24,8 +24,20 @@ export default function NavBarN() {
     // console.log(pathname)
     const ref = useRef(nav);
     
+    useEffect(() => {
+      //load data from localStorage on componenet mount
+      const stNav = localStorage.getItem('myNav');
+      if(stNav){
+        setNav(JSON.parse(stNav));
+      }
+    },[])
+
+    useEffect(()=>{
+      localStorage.setItem("myNav", JSON.stringify(nav))
+    },[nav])
+
     const setMap = (item: { name: any; href?: string; current?: boolean }) => {
-        const abc = ref.current;
+        const abc = nav;
         abc.map((i) => {
             // console.log(i)
             i.current=false;
@@ -33,6 +45,8 @@ export default function NavBarN() {
                         
         })
         console.log(abc)
+        setNav((prevNav) => [...prevNav]);
+        // localStorage.setItem("navInput",abc)
         // setNav(abc)
         return abc
     }

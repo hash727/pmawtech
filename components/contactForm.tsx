@@ -8,6 +8,7 @@ type FormData = {
   name: string;
   email: string;
   phone: string;
+  sp_req:string;
   message: string;
 };
 
@@ -77,6 +78,17 @@ export default function ContactForm() {
           placeholder="Phone Number"
         />
         {errors.phone && <p className="text-red-500 text-sm mt-1">Phone is required</p>}
+      </div>
+
+      <div>
+        <label className="block mb-1 font-semibold">Contract Demand(in KW from DISCOM) or Solar Plant Requirement (in KW)</label>
+        <input
+          type="tel"
+          {...register('sp_req', { required: true })}
+          className="w-full border border-gray-300 px-4 py-2 rounded-md"
+          placeholder="Solar Plant Required (in Kilo Watts)"
+        />
+        {errors.sp_req && <p className="text-red-500 text-sm mt-1">Solar Plant (in KW) is required</p>}
       </div>
 
       <div>
