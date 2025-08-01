@@ -39,7 +39,7 @@ export default function Home() {
                     w-25 md:w-60 lg:w-100
                   "
               />
-              <span className="py-4 ml-10">
+              <span className="py-4 ml-10 items-center justify-items-center align-middle">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-300">WE OFFER</h2>
                 <ul className="list-disc list-inside text-blue-950 dark:text-blue-300 md:lg:text-xl" >
                   

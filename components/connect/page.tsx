@@ -31,7 +31,7 @@ const ConnectPage = () => {
       <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold text-center text-white-700 mb-5">
         Connect With Us
       </h1>
-      <p className="text-center text-gray-600 mb-5 text-xl/snug md:lg:text-xl">
+      <p className="text-center text-gray-600 mb-5 text-lg/snug md:lg:text-lg px-5">
         Reach out through any of the platforms below — we’re always ready to assist you.
       </p>
 

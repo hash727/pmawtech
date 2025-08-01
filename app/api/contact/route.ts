@@ -30,7 +30,7 @@ export async function POST(req: Request) {
       subject: `New Solar Plant of ${sp_req/1000} MW Request from ${name} - ${phone}`,
       text: `From: ${name} <${email}>\n\n Dear Sir,\n We would like to inform you that there is a requirement for the installation of a ${sp_req} kW (${sp_req/1000} MW) solar power plant to meet our current and future energy demands.\n
       ${message}\n\n 
-      Please treat this matter as a priority and acknowledge receipt of this communication.\n\n${name}\n${phone}`,
+      <Strong>Please treat this matter as a priority and acknowledge receipt of this communication.</Strong>\n\n${name}\n${phone}`,
     })
     
     return NextResponse.json({ success: true });

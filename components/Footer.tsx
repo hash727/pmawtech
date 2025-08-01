@@ -10,16 +10,16 @@ function FooterSection(){
             </p> */}
             <ConnectPage />
           </div>
-          <div className="text-white font-semibold text-xl md:lg:text-2xl">
-            <ul className="list-disc">
+          <div className="text-white px-5 font-semibold text-xl md:lg:text-2xl">
+            <ul className="list-none">
               <li>
-                pmawtechnologies@gmail.com
+                Roof Top Solar
               </li>
               <li>
-                suhailsalva@gmail.com
+                Ground Mount Solar
               </li>
               <li>
-                pharishkumar123@gmail.com
+                Residential / commercial Solar
               </li>
             </ul>
           </div>

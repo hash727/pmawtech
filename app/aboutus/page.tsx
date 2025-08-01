@@ -83,7 +83,8 @@ const AboutPage = () => {
                       transition={{ delay: 0.2, duration: 0.6 }}
                       src={src} 
                       alt={`Solar Project ${index + 1}`} 
-                      className="w-full h-[320px] md:lg:h-[400px] object-cover" />
+                      className="w-full h-[240px] md:h-[320px] lg:h-[400px] object-cover" 
+                    />
                 </div>
                 ))}
             </div>

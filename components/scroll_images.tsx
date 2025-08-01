@@ -61,10 +61,9 @@ function ScrollingImages(){
                     src={src}
                     alt={`image-dub-${1}`}
                     className="
-                      
                       w-full
+                      h-[240px] md:h-[320px] lg:h-[480px] !important
                       object-cover
-                     
                     "                      
                   />
                     
