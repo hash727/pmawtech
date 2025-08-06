@@ -6,15 +6,41 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 // import {motion, useScroll} from "motion/react"
 import {motion} from "framer-motion";
+import { aboutImages } from '@/lib/tools';
 
-const images = [
-  '/images/rooftop1.jpg',
-  '/images/rooftop2.jpg',
-  '/images/rooftop3.jpg',
-  '/images/groundmount1.jpg',
-  '/images/groundmount2.jpg',
-  '/images/groundmount3.jpg',
-];
+
+// const images = [
+//   {
+//     href:'/images/rooftop1.jpg', 
+//     description:"Roof Top: ", 
+//     details:"A photovoltaic (PV) system installed on the roof of a building to generate electricity from sunlight."
+//   },
+//   {
+//     href:'/images/rooftop2.jpg', 
+//     description: "Roof Top:",
+//     details:" These systems convert solar energy into usable electricity, which can be used to power the building or be fed back into the grid"
+//   },
+//   {
+//     href:'/images/rooftop3.jpg', 
+//     description: "Roof Top:",
+//     details:"They offer a clean, renewable energy source and can help reduce electricity bills and reliance on traditional power sources. "
+//   },
+//   {
+//     href:'/images/groundmount1.jpg',  
+//     description: "Ground Mount:",
+//     details: "A ground-mounted solar system is a photovoltaic (PV) system where solar panels are installed on the ground rather than on rooftops."
+//   },
+//   {
+//     href:'/images/groundmount2.jpg', 
+//     description: "Ground Mount:",
+//     details: " These systems are designed with mounting structures that hold the panels at an optimal angle to the sun, often using frameworks that are anchored to the ground with posts, concrete, or screws."
+//   },
+//   {
+//     href:'/images/groundmount3.jpg', 
+//     description: "Ground Mount:",
+//     details:"They offer flexibility in terms of size and placement, making them suitable for both large-scale projects and individual households with ample open space"
+//   },
+// ];
 
 const AboutPage = () => {
 
@@ -74,17 +100,23 @@ const AboutPage = () => {
             </motion.p>
 
             {/* Image Slider */}
-            <div ref={sliderRef} className="flex items-center justify-items-center mt-10 mb-12 rounded-lg overflow-hidden">
-                {images.map((src, index) => (
-                <div className="keen-slider__slide" key={index}>
+            <div ref={sliderRef} className=" flex items-center justify-items-center mt-10 mb-12 rounded-lg overflow-hidden">
+                {aboutImages.map((src, index) => (
+                <div className="keen-slider__slide relative" key={index}>
+                  <>
                     <motion.img 
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.2, duration: 0.6 }}
-                      src={src} 
+                      src={src.href} 
                       alt={`Solar Project ${index + 1}`} 
-                      className="w-full h-[240px] md:h-[320px] lg:h-[400px] object-cover" 
+                      className="w-full h-[240px] md:h-[320px] lg:h-[400px] object-cover z-0" 
                     />
+                  </>
+                  <div className='relative -mt-[180px] space-x-1 space-y-2 h-auto p-5 left-0 w-full bg-gray-100/40 dark:bg-gray-900/40 z-40'>
+                    <h1 className='text-xl md:text-3xl lg:text-4xl font-bold text-shadow-md text-gray-950 dark:text-gray-100'>{src.description}</h1>
+                    <p className='text-sm md:text-lg lg:text-xl text-black dark:text-gray-300 text-shadow-2xs'>{src?.details}</p>
+                  </div>
                 </div>
                 ))}
             </div>

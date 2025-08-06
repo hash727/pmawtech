@@ -31,15 +31,15 @@ const ConnectPage = () => {
       <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold text-center text-white-700 mb-5">
         Connect With Us
       </h1>
-      <p className="text-center text-gray-600 mb-5 text-lg/snug md:lg:text-lg px-5">
+      <p className="text-center text-gray-900 dark:text-gray-600 mb-5 text-lg/snug md:lg:text-lg px-5">
         Reach out through any of the platforms below — we’re always ready to assist you.
       </p>
 
-      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-5 items-center justify-items-center text-white">
+      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-5 items-center justify-items-center">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             
-            <FaWhatsapp className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px]' />
+            <FaWhatsapp className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px] hover:text-green-500 cursor-pointer' />
             
           </DropdownMenuTrigger>
           <DropdownMenuContent align='end'>
@@ -88,7 +88,7 @@ const ConnectPage = () => {
         </a> */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild> 
-            <FaFacebookF className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px]' />
+            <FaFacebookF className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px] hover:text-blue-800 cursor-pointer' />
           </DropdownMenuTrigger>
           <DropdownMenuContent align='end'>
             {ContactDetails.map((data)=> (
@@ -123,7 +123,7 @@ const ConnectPage = () => {
           rel="noopener noreferrer"
         //   className="flex flex-col items-center justify-center bg-pink-500 hover:bg-pink-600 rounded-xl p-4 transition"
         >
-          <FaInstagram className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px]' />
+          <FaInstagram className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px] hover:text-pink-800 cursor-pointer' />
           {/* <span className="mt-2 text-sm">Instagram</span> */}
         </a>
 
@@ -133,12 +133,12 @@ const ConnectPage = () => {
           rel="noopener noreferrer"
         //   className="flex flex-col items-center justify-center bg-blue-800 hover:bg-blue-900 rounded-xl p-4 transition"
         >
-          <FaLinkedinIn className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px]' />
+          <FaLinkedinIn className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px] hover:text-gray-500 cursor-pointer' />
           {/* <span className="mt-2 text-sm">LinkedIn</span> */}
         </a>
         <DropdownMenu>
           <DropdownMenuTrigger asChild> 
-            <FaEnvelope className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px]' />
+            <FaEnvelope className='h-[48px] w-[48px] md:lg:h-[36px] md:lg:w-[36px] hover:text-red-500 cursor-pointer' />
           </DropdownMenuTrigger>
           <DropdownMenuContent align='end'>
             {ContactDetails.map((data)=> (

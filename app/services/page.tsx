@@ -1,7 +1,7 @@
 'use client'
 
 import { Metadata } from 'next';
-import {motion} from 'framer-motion'
+import {motion, useScroll, useSpring} from 'framer-motion'
 import { FaSolarPanel, FaBolt, FaTools, FaChartLine, FaBatteryFull, FaRecycle } from 'react-icons/fa';
 import ServiceCard from '@/components/ServiceCard';
 import ServiceModal from '@/components/ServiceModal';
@@ -48,10 +48,19 @@ import { useState } from 'react';
     ];
 
 function Services(){
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+
     const [selected, setSelected] = useState<number | null>(null);
 
     return(
-        
+        <>
+        <motion.div className="progress-bar" style={{ scaleX }} />
         <div className='py-20 p-5 md:p-10 lg:p-20 w-full bg-gray-800 rounded-lg sm:rounded-sm'>
             <main className=" mx-auto px-4 py-12 bg-gray-300 dark:bg-gray-950">
                 <motion.h1 
@@ -102,6 +111,7 @@ function Services(){
                 )}
             </main>
         </div>
+    </>
     )
 }
 

@@ -8,10 +8,13 @@ import MainBanner from "@/components/banner";
 import ConnectPage from "@/components/connect/page";
 import ModeToggle from "@/components/toggleTheme";
 import FooterSection from "@/components/Footer";
-
+import {motion} from "framer-motion";
 
 export const metadata: Metadata = {
-  title: "Home - Solar Projects",
+  icons:{
+    icon: "/Logo/logo.png",
+  },
+  title: "PMAW - Solar Projects, Bangalore, Karnataka",
   description: "PMAW technologies, Bangalore is providing wider range of Solar technologies for both commercial solar plant and home solar systems.",
 };
 
@@ -23,7 +26,8 @@ export default function Home() {
       {/* <NavBar /> */}
       <MainBanner />
       
-      <div className=" ">
+      <div 
+      className=" ">
         <Card>
           <CardHeader><span className="text-3xl md:text-4xl lg:text-5xl font-semibold text-shadow-2xs ">Solar Project - Ground Mount & Roof Top</span></CardHeader>
           <CardContent>
@@ -53,7 +57,10 @@ export default function Home() {
 
         </Card>
       </div>
-      <div className="bg-gray-300 dark:bg-gray-900 w-full p-10 rounded-t-xl">
+      <div 
+        className="bg-gray-300 dark:bg-gray-900 w-full p-10 rounded-t-xl"
+        
+      >
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-300">OUR PRODUCT RANGES</h2>
         <div className="row-start-2 flex gap-5 flex-wrap">
           <div>

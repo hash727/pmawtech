@@ -132,6 +132,17 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--color-slate-400);
+  transform-origin: 0%;
+  z-index: 1001;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

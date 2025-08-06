@@ -67,13 +67,18 @@ export default function NavBarN() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img
-                alt="PMAW technologies"
-                src="/Logo/logo.png"
-                className="h-10 w-auto"
-              />
+              <Link
+                href="/"
+                onClick={()=>(setMap(nav[0]))}
+              >
+                <img
+                  alt="PMAW technologies"
+                  src="/Logo/logo.png"
+                  className=" h-[96px] w-auto"
+                />
+              </Link>
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden sm:ml-6 sm:block items-center md:my-[5%] lg:my-[5%]">
               <div className="flex space-x-4">
                 {nav.map((item) => (
                   <Link
@@ -92,7 +97,7 @@ export default function NavBarN() {
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 flex items-center justify-items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             {/* <div>
                 {pathname.slice(1)}
             </div> */}

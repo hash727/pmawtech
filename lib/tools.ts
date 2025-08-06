@@ -1,0 +1,48 @@
+
+export const scrollImages = [
+    {
+        href:"/Home/solar_main.jpg", 
+        heading:"Solar System"
+    },
+    {
+        href:"/Home/solar_main1.jpg", 
+        heading: "- Roof Top -"
+    },
+    {
+        href:"/Home/solar_main2.jpg", 
+        heading: "- Ground Mount -"
+    },
+  ];
+
+export const aboutImages = [
+  {
+    href:'/images/rooftop1.jpg', 
+    description:"Roof Top: ", 
+    details:"A photovoltaic (PV) system installed on the roof of a building to generate electricity from sunlight."
+  },
+  {
+    href:'/images/rooftop2.jpg', 
+    description: "Roof Top:",
+    details:" These systems convert solar energy into usable electricity, which can be used to power the building or be fed back into the grid"
+  },
+  {
+    href:'/images/rooftop3.jpg', 
+    description: "Roof Top:",
+    details:"They offer a clean, renewable energy source and can help reduce electricity bills and reliance on traditional power sources. "
+  },
+  {
+    href:'/images/groundmount1.jpg',  
+    description: "Ground Mount:",
+    details: "A ground-mounted solar system is a photovoltaic (PV) system where solar panels are installed on the ground rather than on rooftops."
+  },
+  {
+    href:'/images/groundmount2.jpg', 
+    description: "Ground Mount:",
+    details: " These systems are designed with mounting structures that hold the panels at an optimal angle to the sun, often using frameworks that are anchored to the ground with posts, concrete, or screws."
+  },
+  {
+    href:'/images/groundmount3.jpg', 
+    description: "Ground Mount:",
+    details:"They offer flexibility in terms of size and placement, making them suitable for both large-scale projects and individual households with ample open space"
+  },
+];
