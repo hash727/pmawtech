@@ -5,6 +5,7 @@ import "./globals.css";
 import NavBarN from "@/components/NavBarN";
 import FooterSection from "@/components/Footer";
 import { Toaster } from 'react-hot-toast';
+import { MainCont } from "@/lib/tools";
 
 
 const geistSans = Geist({
@@ -19,7 +20,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "PMAW Technologies",
-  description: "Develped by Harish",
+  description: `${MainCont[0].description} --Develped by Harish"`,
 };
 
 export default function RootLayout({

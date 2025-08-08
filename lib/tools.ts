@@ -14,6 +14,22 @@ export const scrollImages = [
     },
   ];
 
+
+export const MainCont = [
+    {
+        heading:"Solar Project - Ground Mount & Roof Top",
+        description: `PMAW Technologies is a dynamic and innovative green energy company that is committed to build premium solar projects. 
+              PMAW CAPEX Thnologies is a dynamic and innovative green energy company that is committed to build premium solar projects. 
+              We work closely with clients to understand their specific energy needs and provide customized solutions that are tailored to their requirements.`,
+    },
+    {
+        heading:"Welding Products - commercial",
+        description: `PMAW Technologies is a dynamic and innovative green energy company that is committed to build premium solar projects. 
+              PMAW CAPEX Thnologies is a dynamic and innovative green energy company that is committed to build premium solar projects. 
+              We work closely with clients to understand their specific energy needs and provide customized solutions that are tailored to their requirements.`,
+    },
+]
+
 export const aboutImages = [
   {
     href:'/images/rooftop1.jpg', 

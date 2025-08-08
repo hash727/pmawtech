@@ -49,7 +49,7 @@ function ScrollingImages(){
         opacity:1,
         scale:1,
         transition:{
-          duration:3
+          duration:1
         }
       }}
       viewport={{
@@ -87,15 +87,19 @@ function ScrollingImages(){
                   </>
                   <div className='absolute top-[60%] space-x-1 p-5 left-[30%] w-full z-50'>
                     <motion.h1 
-                      initial={{ opacity: 0, y: -20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6 }}
-                      className='text-xl md:text-3xl lg:text-7xl font-bold text-shadow-lg text-shadow-blue-500 text-gray-950 dark:text-gray-100'
+                      initial={{ 
+                        opacity: 0, 
+                        y: -20,
+                        scale:0.25 
+                      }}
+                      animate={{ opacity: 0.8, y: 0, scale:1 }}
+                      transition={{ duration: 0.2 }}
+                      className='text-xl md:text-3xl lg:text-7xl font-bold text-shadow-lg text-shadow-blue-500 text-gray-950 dark:text-gray-100 font-Caveat'
                       whileInView={{
-                        opacity:1,
-                        scale: 1.25,
+                        opacity:0.8,
+                        scale: 1.5,
                         transition: {
-                          duration: 3
+                          duration: 1
                         }
                       }}
                     >
