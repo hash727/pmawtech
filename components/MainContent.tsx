@@ -11,6 +11,8 @@ import {
   CarouselApi
 } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'
+import FadeInOnScroll from '@/components/FadeInOnScroll'
+import { FaceFrownIcon } from '@heroicons/react/24/outline'
 
 function MainContent() {
     const [apiHeading, setApiHeading] = React.useState<CarouselApi>()
@@ -33,6 +35,7 @@ function MainContent() {
   return (
     <div className='grid grid-cols-1 space-y-4 '>
         <div className='relative'>
+            <FadeInOnScroll delay={0.5}>
             <Carousel
                 setApi={setApiHeading}
                 className='w-full inset-0'
@@ -43,46 +46,58 @@ function MainContent() {
                     
                 ]}
             >
+                 
                 <CarouselContent>
                     {MainCont.map((data, i)=>(
+                       
                         <CarouselItem key={i}>
                             <Card className='p-8'>
                                 <CardHeader>
-                                    <span className='text-3xl md:text-4xl lg:text-5xl font-semibold text-shadow-2xs'>
-                                        {data.heading}
-                                    </span>
+                                    
+                                        <span className='text-3xl md:text-4xl lg:text-5xl font-semibold text-shadow-2xs'>
+                                            {data.heading}
+                                        </span>
+                                   
                                 </CardHeader>
                                 <CardContent>
-                                    <p className='text-xl lg:text-2xl'>
-                                        {data.description}
-                                    </p>
+                                    
+                                        <p className='text-xl lg:text-2xl'>
+                                            {data.description}
+                                        </p>
+                                   
                                 </CardContent>
                             </Card>
                         </CarouselItem>
+                        
                     ))}
                 </CarouselContent>
                 <CarouselPrevious className='absolute left-0.5 top-[50%] cursor-pointer ' />
                 <CarouselNext className='absolute right-0.5 top-[50%] cursor-pointer '/>
             </Carousel>
+            </FadeInOnScroll>
         </div>
        
+        <FadeInOnScroll delay={0.5}>
         <div className="flex  flex-1/2 justify-evenly items-center w-full bg-gray-900 py-10">
-            <img
-                src="/Home/solar_main.jpg"
-                className=" aspect-auto
-                    w-25 md:w-60 lg:w-100
-                    "
-            />
-            <span className="py-4 ml-10 items-center justify-items-center align-middle">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-300">WE OFFER</h2>
-            <ul className="list-disc list-inside text-blue-950 dark:text-blue-300 md:lg:text-xl" >
-                
-                <li>OPEX model projects</li>
-                <li>CAPEX model projects</li>
-                
-            </ul>
-            </span>
+           
+                <img
+                    src="/Home/solar_main.jpg"
+                    className=" aspect-auto
+                        w-25 md:w-60 lg:w-100
+                        "
+                />
+                <span className="py-4 ml-10 items-center justify-items-center align-middle block">
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-300">WE OFFER</h2>
+                <ul className="list-disc list-inside text-blue-950 dark:text-blue-300 md:lg:text-xl" >
+                    
+                    <li>OPEX model projects</li>
+                    <li>CAPEX model projects</li>
+                    
+                </ul>
+                </span>
+           
         </div>
+        </FadeInOnScroll>
       {/* <Card>
           <CardHeader><span className="text-3xl md:text-4xl lg:text-5xl font-semibold text-shadow-2xs ">Solar Project - Ground Mount & Roof Top</span></CardHeader>
           <CardContent>
@@ -111,7 +126,7 @@ function MainContent() {
           </CardContent>
 
         </Card> */}
-
+        <FadeInOnScroll delay={0.5}>
         <div 
             className="flex flex-col md:flex-row bg-gray-300 dark:bg-gray-900 w-full p-10 rounded-t-xl items-center justify-evenly"
             
@@ -133,6 +148,7 @@ function MainContent() {
             </div>
             </div>
         </div>
+        </FadeInOnScroll>
     </div>
     
     
