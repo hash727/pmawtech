@@ -53,7 +53,7 @@ export default function NavBarN() {
    
     
   return (
-    <Disclosure as="nav" className="bg-gray-800 shadow-xl">
+    <Disclosure as="nav" className="bg-amber-500 shadow-xl">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -74,7 +74,7 @@ export default function NavBarN() {
                 <img
                   alt="PMAW technologies"
                   src="/Logo/logo.png"
-                  className=" h-[96px] w-auto"
+                  className=" h-[52px] w-auto"
                 />
               </Link>
             </div>
@@ -86,7 +86,7 @@ export default function NavBarN() {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-slate-700 hover:text-white',
+                      item.current ? 'bg-gray-900 text-amber-500' : 'text-amber-950 hover:bg-slate-700 hover:text-amber-500',
                       'rounded-md px-3 py-2 text-sm font-medium',
                     )}
                     onClick={()=>(setMap(item))}
@@ -103,7 +103,7 @@ export default function NavBarN() {
             </div> */}
             <button
               type="button"
-              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+              className="relative rounded-full p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
