@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: "Services Offered - PMAW Solar Technologies, Bangalore, Karnataka",
-    description: " Various serves offered for Solar Powerplant projects in Karnataka."
+    description: " Various services offered for Solar Powerplant projects in Karnataka."
 }
 
 const ContactDetails = [
