@@ -58,7 +58,7 @@ export default function NavBarN() {
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-amber-900 hover:bg-amber-700 hover:text-amber-300 focus:ring-2 focus:ring-amber-950 focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
@@ -112,7 +112,7 @@ export default function NavBarN() {
             <ModeToggle />
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3 hidden">
-              <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-800">
+              <MenuButton className="relative flex rounded-full bg-gray-950 text-sm focus:outline-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-800">
                 <span className="absolute -inset-1.5" />
                 <span className="sr-only">Open user menu</span>
                 <img
@@ -165,9 +165,12 @@ export default function NavBarN() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
+                // item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                // 'block rounded-md px-3 py-2 text-base font-medium',
+                item.current ? 'bg-gray-900 text-amber-500' : 'text-amber-950 focus:bg-slate-700 focus:text-amber-500',
+                      ' block rounded-md px-3 py-2 text-base font-medium',
               )}
+              onClick={()=>(setMap(item))}
             >
               {item.name}
             </DisclosureButton>

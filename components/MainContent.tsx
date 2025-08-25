@@ -78,7 +78,7 @@ function MainContent() {
         </div>
        
         <FadeInOnScroll delay={0.5}>
-        <div className="flex  flex-1/2 justify-evenly items-center w-full bg-gray-900 py-10">
+        <div className="flex  flex-1/2 justify-evenly items-center w-full bg-gray-300 dark:bg-gray-900 py-10">
            
                 <img
                     src="/Home/solar_main.jpg"
