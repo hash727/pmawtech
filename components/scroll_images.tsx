@@ -40,30 +40,16 @@ function ScrollingImages(){
   }, [api])
 
   return (
-    <motion.div 
-      initial={{
-        opacity:0,
-        scale:0.85
-      }}
-      whileInView={{
-        opacity:1,
-        scale:1,
-        transition:{
-          duration:1
-        }
-      }}
-      viewport={{
-        amount:0.7,
-
-      }}
+    <div 
       className="items-center justify-items-center "
     >
       {/* <div className={`bg-[url(${images[0]})})] w-96 h-[250px] bg-center bg-no-repeat bg-cover`}>
                   .
                 </div> */}
+        
         <Carousel
           setApi={setApi}
-          className="w-full inset-0"
+          className="w-full inset-0 rounded-2xl"
           plugins={[
             Autoplay({
               delay: 5000,
@@ -75,17 +61,25 @@ function ScrollingImages(){
               <CarouselItem key={i} className="relative">
                 {/* <div className={`bg-[url(${src})})] bg-center bg-no-repeat bg-cover`}> */}
                   <>
+                      <div className="after:inset-0 after:w-full after:h-full after:absolute after:bg-slate-950/80 after:z-[1]">
+                     
+                        <video autoPlay loop muted className="absolute w-full h-full top-0 left-0 object-cover ">
+                          <source src={src.vidSrc} type="video/mp4"/>
+                          <source src={src.vidSrc} type="video/webm"/>
+
+                        </video>
+                      </div>
                       <img
                         src={src.href}
-                        alt={`image-dub-${1}`}
+                        alt={`image-dub-${i}`}
                         className="
                           w-full
-                          h-[240px] md:h-[320px] lg:h-[480px] !important
+                          h-full
                           object-cover
                         "                      
                       />
                   </>
-                  <div className='absolute top-[60%] space-x-1 p-5 left-[30%] w-full z-50'>
+                  <div className='absolute top-[30%] space-x-1 p-5 left-[30%] w-full z-50'>
                     <motion.h1 
                       initial={{ 
                         opacity: 0, 
@@ -117,7 +111,7 @@ function ScrollingImages(){
       {/* </div> */}
       
       
-    </motion.div>
+    </div>
   );
 }
 

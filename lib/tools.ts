@@ -1,16 +1,19 @@
 
 export const scrollImages = [
     {
-        href:"/Home/solar_main.jpg", 
+        href:"/Home/solar_main.jpg",
+        vidSrc:"/videos/video/hero_video.mp4",
         heading:"Solar System"
     },
     {
         href:"/Home/solar_main1.jpg", 
-        heading: "- Roof Top -"
+        vidSrc:"/videos/video/hero_roof.webm",
+        heading: "Roof Top"
     },
     {
         href:"/Home/solar_main2.jpg", 
-        heading: "- Ground Mount -"
+        vidSrc:"/videos/video/hero_video.mp4",
+        heading: "Ground Mount"
     },
   ];
 
@@ -60,3 +63,31 @@ export const aboutImages = [
     details:"They offer flexibility in terms of size and placement, making them suitable for both large-scale projects and individual households with ample open space"
   },
 ];
+
+
+export const ContactDetails = [
+    {
+        name:"Prasanna", 
+        mobile: "9986914022", 
+        href: "http://wa.me/919986914022", 
+        faceBook: "https://facebook.com/pmawtechnologies",
+        instagram: "https://instagram.com/pmawtechnologies" ,
+        email:"mailto:pmawtechnologies@gmail.com"
+    },
+    {
+        name:"Suhail Ahamed", 
+        mobile: "9902816261", 
+        href: "http://wa.me/919902816261", 
+        faceBook: "https://facebook.com/suhail", 
+        instagram: "https://instagram.com/suhail" ,
+        email:"mailto:suhail.ighs@gmail.com"
+    },
+    {
+      name:"Harish",
+      mobile:"9449791119",
+      href:"http://wa.me/919449791119",
+      faceBook:"https://facebook.com/pharishkumar123",
+      instagram:"https://instagram.com/pharishkumar123",
+      email:"mailto:pharishkumar123@gmail.com"
+    }
+  ];
